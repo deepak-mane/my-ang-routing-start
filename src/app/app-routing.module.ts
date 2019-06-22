@@ -36,6 +36,8 @@ const appRoutes: Routes =[
 
 @NgModule({
     imports: [
+        // To tackle problem of parsing by Internet Hosted Servers use below HashTag method
+        // RouterModule.forRoot(appRoutes, {useHash: true})
         RouterModule.forRoot(appRoutes)
     ],
     exports: [RouterModule]
